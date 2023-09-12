@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Apotik Simulator</title>
+</head>
+
+<body>
+    <h1>Apotik Simulator</h1>
+
+    <div class="admin-panel">
+        <h2>Admin Panel</h2>
+        <label for="medicine-name">Medicine Name:</label><br>
+        <input type="text" id="medicine-name"><br>
+        <label for="medicine-price">Medicine Price:</label><br>
+        <input type="number" id="medicine-price" min="0.01" step="0.01"><br>
+        <label for="medicine-quantity">Medicine Quantity:</label><br>
+        <input type="number" id="medicine-quantity" min="1"><br>
+        <button onclick="button('addMedicine')">Add Medicine</button><br>
+        <label for="remove-medicine"><br><br>Select Medicine to Remove:</label><br>
+        <select id="remove-medicine"></select><br>
+        <button onclick="button('removeMedicine')">Remove Medicine</button><br>
+        <h3>Update Medicine</h3><br>
+        <label for="update-medicine-select">Select Medicine:</label><br>
+        <select id="update-medicine-select"></select><br>
+        <label for="update-medicine-name">New Name:</label><br>
+        <input type="text" id="update-medicine-name"><br>
+        <label for="update-medicine-price">New Price:</label><br>
+        <input type="number" id="update-medicine-price" step="0.01"><br>
+        <label for="update-medicine-quantity">New Quantity:</label><br>
+        <input type="number" id="update-medicine-quantity"><br>
+        <button onclick="button('updateMedicine')">Update Medicine</button><br>
+
+    </div>
+
+    <div class="customer-panel">
+        <h2>Customer Panel</h2>
+        <label for="buy-medicine">Select Medicine to Buy:</label><br>
+        <select id="buy-medicine"></select><br>
+        <label for="buy-quantity">Quantity:</label><br>
+        <input type="number" id="buy-quantity" min="1"><br>
+        <button onclick="button('buyMedicine')">Buy Medicine</button><br>
+        <p>Total Amount: $<span id="total-amount">0.00</span></p><br>
+        <button onclick="button('checkout')">Checkout</button><br>
+    </div>
+
+    <div class="output">
+        <h2>Output</h2>
+        <p id="output-text"></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

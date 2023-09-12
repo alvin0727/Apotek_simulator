@@ -1,0 +1,84 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, p, label {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.admin-panel, .customer-panel, .output {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 15px 0;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+select, input[type="number"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+select, input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+p {
+    font-size: 18px;
+    margin: 15px 0;
+    color: #333;
+}
+
+#total-amount {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Center the text in the output panel */
+.output {
+    text-align: center;
+}
